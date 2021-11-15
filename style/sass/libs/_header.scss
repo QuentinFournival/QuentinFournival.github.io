@@ -1,0 +1,137 @@
+// Header [Navbar/intro/bg restaurants]
+header {
+    position: relative;
+    width: 100%;
+}
+
+header .head-navbar {
+	position: relative;
+	width: 100%;
+	height: 65px;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 3px 5px 0px rgba(217, 217, 217, 0.75);
+	z-index: 1;
+}
+
+header .head-navbar #home-button {
+    position: absolute;
+    margin: 9px;
+    left: 10px;
+    width: 35px;
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition-duration: 0.2s;
+    border: 2px solid transparent;
+    border-radius: 45px;
+    padding: 3px;
+}
+
+header .head-navbar #home-button:hover {
+    opacity: 0.7;
+    border: 2px solid #333;
+}
+
+header .head-navbar .nav-banner {
+	width: 190px;
+	margin-top: 18px;
+}
+
+header .head-location {
+	position: absolute;
+	right: 0px;
+    height: 65px;
+    top: 65px;
+    width: 100%;
+	background-color: #e2e2e2;
+	@include small_up_screen {
+		top: 0px;
+		width: 220px;
+		background-color: transparent;
+	}
+}
+
+header .head-location #location-container {
+	width: 180px;
+	height: 45px;
+	margin: 10px;
+	display: inline-block;
+}
+
+header .head-location #location-container img {
+	display: inline-block;
+	width: 22px;
+	position: relative;
+	top: 6px;
+}
+
+
+header .head-location #location-container span {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+header .head-intro {
+	width: 100%;
+    padding-top: 70px;
+    height: 330px;
+	background-color: #f2f2f2;
+	display: inline-block;
+}
+
+header .head-background-1 { background: url($path_img + '/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg') no-repeat; }
+header .head-background-2 { background: url($path_img + '/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg') no-repeat; }
+header .head-background-3 { background: url($path_img + '/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg') no-repeat; }
+header .head-background-4 { background: url($path_img + '/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg') no-repeat; }
+
+header .head-restaurant {
+    background-size: 100% 110%;
+    background-position: 0px 60%;
+    -webkit-box-shadow: inset 0px -3px 40px 0px #000000c4;
+    -moz-box-shadow: inset 0px -3px 40px 0px #000000c4;
+	box-shadow: inset 0px -3px 40px 0px #000000c4;
+	@include small_up_screen {
+		background-size: 100% 220%;
+	}
+	@include large_screen {
+		background-size: 100% 300%;
+	}
+}
+
+header .head-intro .hidden-intro {
+	display: none;
+}
+
+header .head-intro #introduction {
+	margin-top: 70px;
+	width: 100%;
+	cursor: default;
+}
+
+header .head-intro #introduction h1 {
+	font-size: 27px;
+}
+
+header .head-intro #introduction h3 {
+	font-weight: normal;
+	font-size: 18px;
+}
+
+header .head-intro #introduction #explore-btn {
+	width: 195px;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	padding: 17px;
+	background-color: gray;
+	border-radius: 45px;
+	margin-top: 15px;
+	background: rgb(147,86,220);
+	background: linear-gradient(340deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+	transition-duration: 0.2s;
+}
+
+header .head-intro #introduction #explore-btn:hover {
+	opacity: 0.8;
+	transform: scale(1.05);
+}

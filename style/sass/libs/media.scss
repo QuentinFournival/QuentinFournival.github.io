@@ -1,0 +1,34 @@
+// Small devices
+@mixin small_screen {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+ }
+  
+ // Medium devices
+ @mixin small_up_screen {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+  
+ // Large devices
+ @mixin moderate_screen {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+  
+ // Extra large devices
+ @mixin large_screen {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+  
+ // Custom devices
+ @mixin custom_screen($screen) {
+    @media (min-width: $screen+'px' ) {
+       @content;
+    }
+ }

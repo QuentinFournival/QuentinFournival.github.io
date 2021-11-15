@@ -1,0 +1,232 @@
+// Main section [tutorial/restaurants]
+.main-container {
+    width: 100%;
+    display: inline-block;
+    @include large_screen {
+        width: 1200px;
+    }
+}
+
+.main-container .hide-tutorial { display: block; }
+
+.main-container .tutorial-s-1 {
+    margin-top: 20px;
+    position: relative;
+    width: 72%;
+    display: inline-block;
+    @include small_up_screen {
+        margin-top: 35px;
+        float: left;
+        left: 8%;
+        width: 35%;
+    }
+    @include moderate_screen {
+        margin-top: 35px;
+        float: left;
+        left: 5%;
+        width: 30%;
+    }
+    @include large_screen {
+        margin-top: 35px;
+        left: 5%;
+        width: 360px;
+    }
+}
+
+.main-container .tutorial-s-1 h3 {
+	position: relative;
+    font-size: 20px;
+    color: #666;
+    float: left;
+} 
+
+.main-container .tutorial-s-1 .tutorial-title {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    height: 65px;
+    margin: 15px 0px 15px 0px;
+    background-color: #f7f7f7;
+    box-shadow: 2px 3px 9px 0px rgba(212, 212, 212, 0.75);
+    transition-duration: 0.25s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.main-container .tutorial-s-1 .tutorial-title:hover {
+	transform: scale(1.02);
+    box-shadow: 2px 8px 15px 0px rgb(226 226 226 / 100%);
+}
+
+.main-container .tutorial-s-1 .tutorial-title .tuto-number {
+    position: absolute;
+    left: -8px;
+    width: 18px;
+    top: 22px;
+    height: 16px;
+    background-color: #b842e8;
+    border-radius: 70px;
+    font-size: 12px;
+    padding: 2px 0px 0px 0px;
+    color: white;
+}
+
+.main-container .tutorial-s-1 .tutorial-title img {
+	width: 24px;
+    height: 28px;
+    position: absolute;
+    top: 18px;
+    left: 45px;
+    filter: brightness(0.6);
+}
+
+.main-container .tutorial-s-1 .tutorial-title .tuto-titlename {
+    float: left;
+    font-size: 14px;
+    color: #1f1f1f;
+    position: relative;
+    top: 25px;
+    left: 90px;
+}
+
+.main-container .restaurants-s-1 {
+    margin-top: 20px;
+    position: relative;
+    height: 100%;
+    padding-bottom: 70px;
+    width: 72%;
+    display: inline-block;
+    @include small_up_screen {
+        width: 55%;
+        margin: 15px;
+        float: right;
+    }
+    @include moderate_screen {
+        width: 62%;
+        margin: 15px;
+        float: right;
+    }
+    @include large_screen {
+        width: 60%;
+        margin: 15px;
+    }
+}   
+
+.main-container .restaurants-s-1 h3 {
+    text-align: left;
+    margin-top: 40px;
+    font-size: 20px;
+    color: #666;
+    @include small_up_screen { margin-left: 12%; }
+    @include moderate_screen { margin-left: 8%; }
+    @include large_screen { margin-left: 2%; }
+}
+
+.main-container .restaurants-s-1 .item-x {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    margin: 15px 0px 15px 0px;
+    width: 100%;
+    height: 280px;
+    background-color: #f1f1f1;
+    box-shadow: 0px 3px 5px 0px rgba(239, 239, 239, 0.75);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+    transition-duration: 0.25s;
+    @include small_up_screen {
+        width: 80%;
+        margin: 15px;
+    }
+    @include moderate_screen {
+        width: 40%;
+        margin: 15px;
+    }
+    @include large_screen {
+        width: 45%;
+        margin: 15px;
+    }
+}
+
+.main-container .restaurants-s-1 .item-x:hover {
+	opacity: 0.8;
+}
+
+.main-container .restaurants-s-1 .item-x .item-x-img .item-x-badge {
+	position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 2Px;
+    color: #20753a;
+    font-size: 13px;
+    padding: 5px 15px 5px 15px;
+    background-color: #7af3c1;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.main-container .restaurants-s-1 .item-x .item-x-img {
+	display: block;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.main-container .restaurants-s-1 .item-x .item-x-img img {
+	width: 100%;
+	height: 100%;
+	transition-duration: 0.25s;
+}
+
+.main-container .restaurants-s-1 .item-x .item-x-img img:hover {
+	transform: scale(1.25);
+}
+
+.main-container .restaurants-s-1 .item-x .item-x-name {
+	font-weight: bold;
+    font-size: 17px;
+    margin: 20px;
+    margin-bottom: 0px;
+    display: block;
+}
+
+.main-container .restaurants-s-1 .item-x .item-x-position {
+	font-size: 17px;
+    margin: 20px;
+    margin-top: 5px;
+    display: block;
+}
+
+.main-container .item-x-like {
+	position: absolute;
+    bottom: 22px;
+    width: 35px;
+    height: 35px;
+    right: 20px;
+    cursor: pointer;
+    background: url($path_img + '/logo/like_logo.png') no-repeat;
+    background-size: 35px 35px;
+    transition: all 0.3s;
+}
+
+.main-container .item-x-like::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    opacity: 0;
+    transition-duration: 0.8s;
+    overflow: hidden;
+}
+.main-container .item-x-like:hover::after {
+    background: url($path_img + '/logo/likeset_logo.png') no-repeat;
+    background-size: 35px 35px;
+    height: 100%;
+    opacity: 1;
+}

@@ -1,0 +1,56 @@
+// Footer
+.back-footer {
+    margin-top: -0px;
+    @include large_screen {
+        margin-top: -250px;
+    }
+}
+
+footer {
+	margin-top: 0px;
+	width: 100%;
+    background-color: #333;
+}
+
+footer .footer-sizing {
+    text-align: left;
+    display: inline-block;
+    padding-bottom: 50px;
+    width: 80%;
+    @include large_screen {
+        width: 1090px;
+    }
+}
+
+footer .footer-sizing #footer-logo {
+    filter: brightness(100);
+    width: 120px;
+    margin-top: 45px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+footer .footer-sizing .footer-btns {
+	display: block;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px;
+    border-bottom: 2px dotted #797979;
+    margin-right: 25px;
+    text-decoration: none;
+    transition-duration: 0.25s;
+    max-width: 100%;
+    @include small_screen { max-width: 240px; }
+}
+
+footer .footer-sizing .footer-btns:hover {
+	opacity: 0.5;
+	border-bottom: 2px solid #797979;
+}
+
+footer .footer-sizing .footer-btns img {
+	position: relative;
+	top: 5px;
+	width: 20px;
+}

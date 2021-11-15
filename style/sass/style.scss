@@ -1,0 +1,27 @@
+// Paths defines
+$path_img: '../images';
+
+// Media sizez defines
+$screen-sm-min: 576px; // Small tablets and large smartphones (landscape view)
+$screen-md-min: 700px; // Small tablets (portrait view)
+$screen-lg-min: 992px; // Tablets and small desktops
+$screen-xl-min: 1200px; // Large tablets and desktops
+
+// Responsive components
+@import "libs/media.scss";
+
+// Front components
+@import "libs/_loading.scss";
+@import "libs/_header.scss";
+@import "libs/_mainpage.scss";
+@import "libs/_menu.scss";
+@import "libs/_footer.scss";
+
+body {
+	background-color: white;
+	text-align: center;
+	margin: 0; padding: 0;
+	width: 100%; height: 100%;
+	font-family: 'Roboto', sans-serif;
+    color: #333;
+}

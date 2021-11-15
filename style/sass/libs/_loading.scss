@@ -1,0 +1,91 @@
+// Loading spinner
+#loading_content {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffb8;
+    z-index: 10;
+    animation: hide_loading 5s both;
+    -moz-animation: hide_loading 5s both;
+    -webkit-animation: hide_loading 5s both;
+    -o-animation: hide_loading 5s both;
+}
+
+@keyframes hide_loading {
+    80%  { opacity: 1; }
+    100% { opacity: 0; display: none; pointer-events: none; }
+}
+@-moz-keyframes hide_loading { /* sur Firefox */
+    80%  { opacity: 1; }
+    100% { opacity: 0; display: none; pointer-events: none; }
+}
+@-webkit-keyframes hide_loading { /* sur Safari et Chrome */
+    80%  { opacity: 1; }
+    100% { opacity: 0; display: none; pointer-events: none; }
+}
+@-o-keyframes hide_loading { /* sur Opera */
+    80%  { opacity: 1; }
+    100% { opacity: 0; display: none; pointer-events: none; }
+}
+
+#loading_content #load_spinner {
+    position: relative;
+    top: 300px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    padding: 10px;
+}
+
+#loading_content #load_spinner .l_spinner_part {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #b842e8;
+    margin-left: 5px;
+    display: inline-block;
+    opacity: 0.5;
+    animation: anim_spinner 1s infinite;
+    -moz-animation: anim_spinner 1s infinite;
+    -webkit-animation: anim_spinner 1s infinite;
+    -o-animation: anim_spinner 1s infinite;
+  }
+  
+  #loading_content #load_spinner #l_spinner_part_1 {
+    animation-delay: 0s;
+    background-color: #7af3c1;
+  
+  }
+  
+  #loading_content #load_spinner #l_spinner_part_2 {
+    animation-delay: 0.25s;
+    background-color: #ff79da;
+  }
+  
+  #loading_content #load_spinner #l_spinner_part_3 {
+    animation-delay: 0.5s;
+    
+  }
+
+@keyframes anim_spinner {
+    from { transform: scale(1); }
+    50%  { transform: scale(1.30); opacity: 1; }
+    to   { transform: scale(1); }
+}
+@-moz-keyframes anim_spinner { /* sur Firefox */
+    from { transform: scale(1); }
+    50%  { transform: scale(1.30); opacity: 1; }
+    to   { transform: scale(1); }
+}
+@-webkit-keyframes anim_spinner { /* sur Safari et Chrome */
+    from { transform: scale(1); }
+    50%  { transform: scale(1.30); opacity: 1; }
+    to   { transform: scale(1); }
+}
+@-o-keyframes anim_spinner { /* sur Opera */
+    from { transform: scale(1); }
+    50%  { transform: scale(1.30); opacity: 1; }
+    to   { transform: scale(1); }
+}
