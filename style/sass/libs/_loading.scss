@@ -32,7 +32,8 @@
 
 #loading_content #load_spinner {
     position: relative;
-    top: 300px;
+    top: 50%;
+    transform: translate(-50%, 0);
     width: 10px;
     height: 10px;
     display: inline-block;

@@ -55,7 +55,6 @@
 
 .main-container .tutorial-s-1 .tutorial-title:hover {
 	transform: scale(1.02);
-    box-shadow: 2px 8px 15px 0px rgb(226 226 226 / 100%);
 }
 
 .main-container .tutorial-s-1 .tutorial-title .tuto-number {
@@ -205,10 +204,11 @@
 	position: absolute;
     bottom: 22px;
     width: 35px;
+    transition: all 0.5s;
     height: 35px;
     right: 20px;
     cursor: pointer;
-    background: url($path_img + '/logo/like_logo.png') no-repeat;
+    background: url('../../../images/logo/like_logo.png') no-repeat;
     background-size: 35px 35px;
     transition: all 0.3s;
 }
@@ -218,6 +218,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    transition: all 0.5s;
     width: 100%;
     height: 0%;
     opacity: 0;
@@ -225,8 +226,9 @@
     overflow: hidden;
 }
 .main-container .item-x-like:hover::after {
-    background: url($path_img + '/logo/likeset_logo.png') no-repeat;
+    background: url('../../../images/logo/like_logo.png') no-repeat;
     background-size: 35px 35px;
     height: 100%;
+    transition: all 0.5s;
     opacity: 1;
 }
